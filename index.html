@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <!-- Code for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Code for google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Code for css file link -->
+    <link rel="stylesheet" href="CSS\style.css">
+
+    <!-- Code for Swiper slider cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Code for font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bdy">
+    <!-- header section -->
+    <header class="header">
+        <a href="#" id="logo"><i class="fa-solid fa-store" id="title"> বাসনওয়ালা</i></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+        <!-- search bar -->
+        <form class="search-for-form">
+            <input type="search-bar" id="search-box" placeholder=" Search here....">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <!-- cart value 1 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image\dinner-set1.webp" class="image-size" alt="Dinner Set">
+                <div class="content">
+                    <h3>Dinner Set</h3>
+                    <span class="price">₹2999/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+
+            <!-- cart value 2 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image\plate1.png" class="image-size" alt="Plate">
+                <div class="content">
+                    <h3>Plate</h3>
+                    <span class="price">₹1199/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+
+            <!-- cart value 3 -->
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image\bowl2.jfif" class="image-size" alt="Bowl">
+                <div class="content">
+                    <h3>Bowl</h3>
+                    <span class="price">₹299/-</span>
+                    <span class="quantity">Qty : 1</span>
+                </div>
+            </div>
+
+            <!-- total amount & checkout button -->
+            <div class="total">total : ₹5797/-</div>
+
+            <div class="div-btn">
+                <!-- <button type="button" class="btn">Checkout</button> -->
+                Checkout
+            </div>
+        </div>
+
+        <!-- login from -->
+        <form action="#" class="login-form">
+            <h3> enter your details</h3>
+            <input type="email" placeholder=" Enter your email" class="box">
+            <input type="password" placeholder=" Enter your password" class="box">
+            <a href="#">forgot password?</a>
+            <a href="Registration Form\index.html" target="_blank">create your account</a>
+            <input type="submit" class="btn" value="login now">
+        </form>
+    </header>
+
+
+    <!-- banner section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3><span>original bronze</span> Utensils @ affordable price</h3>
+            <p>Get to know our huge variety of pure bronze, brass, copper utensils, and German Silver products at the
+                best prices. Bring Indian culture to your homes with our eye-appealing and authentic dinnerware,
+                cookware, tableware, and serveware to impress your guests in a royal style.
+            </p>
+            <a href="#" class="shopnow-btn">shop now</a>
+        </div>
+    </section>
+
+
+    <!-- features section -->
+    <section class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+
+        
+        <div class="box-container">
+
+            <!-- feature-box1 -->
+            <div class="box">
+                <img src="image/My project.jpg" alt="feature1">
+                <h3>original kansa</h3>
+                <p>pure lead free kansa utensils made by heating and beating process.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <!-- feature-box2 -->
+            <div class="box">
+                <img src="image/feature2-fast-delivery.png" alt="feature2">
+                <h3>fast delivery</h3>
+                <p>product will shift within 24 hours and 10 days easy return.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <!-- feature-box3 -->
+            <div class="box">
+                <img src="image/feature3-payment.jpg" alt="feature3">
+                <h3>secure payment</h3>
+                <p>100% secured and easy payment using UPI, credit/debit card.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- products section -->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+
+        <!-- first section -->
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <!-- product-box1 -->
+                <div class="swiper-slide box">
+                    <img src="image/product9.jfif" alt="dinner set">
+                    <h1>dinner set</h1>
+                    <div class="price">₹1999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box2 -->
+                <div class="swiper-slide box">
+                    <img src="image/product2.jfif" alt="handi">
+                    <h1>handi</h1>
+                    <div class="price">₹1299/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box3 -->
+                <div class="swiper-slide box">
+                    <img src="image/product3.png" alt="Spoon set">
+                    <h1>Spoon set</h1>
+                    <div class="price">₹999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box4 -->
+                <div class="swiper-slide box">
+                    <img src="image/product4.png" alt="kandi">
+                    <h1>kandi</h1>
+                    <div class="price">₹799/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box5 -->
+                <div class="swiper-slide box">
+                    <img src="image/product5.jfif" alt="glass">
+                    <h1>glass</h1>
+                    <div class="price">₹699/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <!-- product-box6 -->
+                <div class="swiper-slide box">
+                    <img src="image/plate1.png" alt="plate">
+                    <h1>plate</h1>
+                    <div class="price">₹1199/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box7 -->
+                <div class="swiper-slide box">
+                    <img src="image/product7-removebg-preview.png" alt="mug">
+                    <h1>mug</h1>
+                    <div class="price">₹999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box8 -->
+                <div class="swiper-slide box">
+                    <img src="image/product8.png" alt="kadai">
+                    <h1>kadai</h1>
+                    <div class="price">₹999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box9 -->
+                <div class="swiper-slide box">
+                    <img src="image/bowl-set1.jfif" alt="Bowl Set">
+                    <h1>Bowl Set</h1>
+                    <div class="price">₹999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <!-- product-box10 -->
+                <div class="swiper-slide box">
+                    <img src="image/bowl-set1.jfif" alt="Bowl Set">
+                    <h1>Bowl Set</h1>
+                    <div class="price">₹999/-</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- product categories section -->
+    <section class="categories" id="categories">
+        <h1 class="heading">product<span>categories</span></h1>
+
+        <div class="box-container">
+
+            <!-- product categories 1 -->
+            <div class="box">
+                <img src="" alt="">
+            </div>
+
+        </div>        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="JS\script.js"></script>
+</body>
+
+</html>
